@@ -6,17 +6,17 @@ let posx,
     w,
     h;
 
-    var spaze = 23;
+var spaze = 23;
 
 //pooyan
-    var bx = 150;
-    var by = 530;
+var bx = 150;
+var by = 450;
 //firdous
-    var bx1 = 350;
-    var by1 = 500;
+var bx1 = 350;
+var by1 = 500;
 //bia
-    var bx2 = 500;
-    var by2 = 560;
+var bx2 = 500;
+var by2 = 560;
 
 /*
 function preload() {
@@ -43,6 +43,10 @@ function draw() {
 
     push();
     cruz();
+    pop();
+
+    push();
+    cruz2();
     pop();
 
     push();
@@ -85,10 +89,9 @@ function pooyan() {
         noStroke();
         //strokeWeight(1);
         fill('#5B5F97');
-        } 
-        else {
+    } else {
         overBox = false;
-        }
+    }
 
     if (
 
@@ -139,10 +142,9 @@ function firdous() {
         overBox = true;
         noStroke();
         fill('#FFC145');
-        } 
-        else {
+    } else {
         overBox = false;
-        }
+    }
 
     if (
 
@@ -193,10 +195,9 @@ function bia() {
         overBox = true;
         noStroke();
         fill('#FF6B6C');
-        } 
-        else {
+    } else {
         overBox = false;
-        }
+    }
 
     if (
 
@@ -226,8 +227,8 @@ function bia() {
 
 
 function cruz() {
-    var bruit = 0.001;
-    var bruit_size = noise(millis() * bruit) * 40;
+    var bruit = 0.0001;
+    var bruit_size = noise(millis() * bruit) * 30;
     var bruitcursor = 0.00001;
     var bruit_cursor = noise(millis() * bruitcursor) * 10;
     //var tamango = random(30);
@@ -237,10 +238,34 @@ function cruz() {
 
 
     translate(mouseX, mouseY);
-    rotate(bruit_cursor);
-    rect(0, 0, 4, bruit_size);
-    //rect(0, 0, bruit_size, 4);
+    rotate(PI / 4.0);
+    rect(0, 0, 1, bruit_size);
+    rect(0, 0, bruit_size, 1);
 }
+
+function cruz2() {
+    var bruit = 0.001;
+    var bruit_size = noise(millis() * bruit) * 15;
+    var bruitcursor = 0.00001;
+    var bruit_cursor = noise(millis() * bruitcursor) * 10;
+    //var tamango = random(30);
+
+        // rectMode(CENTER);
+        // noStroke();
+        // fill(255);
+
+
+        translate(mouseX, mouseY);
+        // rect(0, 0, 1, bruit_size);
+        // rect(0, 0, bruit_size, 1);
+
+    noFill();
+    stroke(255);
+    strokeWeight(1.5);
+    ellipse(0, 0, bruit_size, bruit_size);
+
+}
+
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
