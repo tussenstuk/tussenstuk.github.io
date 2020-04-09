@@ -9,14 +9,14 @@ let posx,
 var spaze = 23;
 
 //pooyan
-var bx = 150;
-var by = 450;
+var bx;
+var by;
 //firdous
-var bx1 = 350;
-var by1 = 500;
+var bx1;
+var by1;
 //bia
-var bx2 = 500;
-var by2 = 560;
+var bx2;
+var by2;
 
 /*
 function preload() {
@@ -25,12 +25,25 @@ function preload() {
 }
 */
 
+  
+
 function setup() {
 
-    createCanvas(windowWidth, windowHeight);
 
-    posx = width * 0.5;
-    posy = height * 0.5;
+    var canvas = createCanvas(windowWidth, windowHeight);
+     canvas.parent('sketch-holder');
+
+     bx = 200;
+     by = random(height/2.5, height/1.5);
+
+     bx1 = 350;
+     by1 = random(height/2.5, height/1.25);
+
+     bx2 = 500;
+     by2 = random(height/2.5, height/1.25);
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+
+    //background(255, 0, 0);
 }
 
 function draw() {

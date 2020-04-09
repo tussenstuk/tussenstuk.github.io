@@ -1,5 +1,7 @@
 @import url(
 https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300);@charset "UTF-8";
+
+/*
 canvas {
 position:fixed;
 top:0;
@@ -14,6 +16,7 @@ position:relative;
 z-index:2;
 cursor: none !important;
 }
+*/
 .comp-form {
 overflow-x: hidden; }
 .comp-form #logo {
@@ -166,7 +169,7 @@ font-size: 25px;
 line-height: 1.5;
 color: #fff;
 letter-spacing: 0.31px;
-margin-top: 100px;
+margin-top: 25%!important;
 margin-bottom: 24px;
 text-transform: uppercase;
 margin-left: 18px;
