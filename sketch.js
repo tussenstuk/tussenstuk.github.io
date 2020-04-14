@@ -32,6 +32,13 @@ var by6;
 //seyed
 var bx7;
 var by7;
+//rodrigo
+var bx8;
+var by8;
+//waylon
+var bx9;
+var by9;
+
 /*
 function preload() {
   futura = loadFont('fonts/futura.otf');
@@ -47,31 +54,35 @@ function setup() {
     var canvas = createCanvas(windowWidth, windowHeight);
      canvas.parent('sketch-holder');
 //pooyan
-     bx = 20;
+     bx = windowWidth/16;
      by = height/1.5;
+//sebastien
+     bx3 = windowWidth/10.5;
+     by3 = windowHeight/0.5;
 //katrina
-     bx1 = 200;
+     bx1 = windowWidth/4;
      by1 = 500;
 //bia
-     bx2 = 390;
-     by2 = height/0.5;
-//sebastien
-     bx3 = 60;
-     by3 = height/0.5;
+     bx2 = windowWidth/3;
+     by2 = windowHeight/0.5;
 //aboozar
-     bx4 = 580;
+     bx4 = windowWidth/2;
      by4 = 0;
-//aboozar
-     bx5 = 680;
-     by5 = 500;
+//anna
+     bx5 = windowWidth/1.9;
+     by5 = 0;
 //firdous
-     bx6 = 800;
+     bx6 = windowWidth/1.57;
      by6 = height/1.5;
-    //background(255, 0, 0);
 //seyed
-     bx7 = 850;
+     bx7 = windowWidth/1.5;
      by7 = 500;
-    //background(255, 0, 0);
+//rodrigo
+     bx8 = windowWidth/1.24;
+     by8 = 500;
+//waylon
+     bx9 = windowWidth/1.12;
+     by9 = height/0.5;
 }
 
 function draw() {
@@ -122,6 +133,15 @@ function draw() {
     push();
     seyed();
     pop();
+
+    push();
+    rodrigo();
+    pop();
+
+    push();
+    waylon();
+    pop();
+
 }
 
 
@@ -456,8 +476,8 @@ function aboozar() {
 
     if (
 
-        mouseX > bx4 - 30 &&
-        mouseX < bx4 + 30 &&
+        mouseX > bx4 - 20 &&
+        mouseX < bx4 + 20 &&
         mouseY > by4 - 800 &&
         mouseY < by4 + 800
 
@@ -472,8 +492,8 @@ function aboozar() {
 
     if (
 
-        mouseX > bx4 - 30 &&
-        mouseX < bx4 + 30 &&
+        mouseX > bx4 - 15 &&
+        mouseX < bx4 + 15 &&
         mouseY > by4 - 800 &&
         mouseY < by4 + 800 && mouseIsPressed
 
@@ -524,7 +544,7 @@ function anna() {
     var bx1 = noise(millis() * bruitx1) * 500;
 */
     var bruity5 = 0.00008;
-    var by5 = 300 + noise(millis() * bruity5) * 200;
+    var by5 = 30 + noise(millis() * bruity5) * 200;
 
     var bruit = 0.0001;
     var bruit_size = 1600 + noise(millis() * bruit) * 800;
@@ -534,8 +554,8 @@ function anna() {
 
     if (
 
-        mouseX > bx5 - 30 &&
-        mouseX < bx5 + 30 &&
+        mouseX > bx5 - 20 &&
+        mouseX < bx5 + 20 &&
         mouseY > by5 - 800 &&
         mouseY < by5 + 800
 
@@ -550,8 +570,8 @@ function anna() {
 
     if (
 
-        mouseX > bx5 - 30 &&
-        mouseX < bx5 + 30 &&
+        mouseX > bx5 - 20 &&
+        mouseX < bx5 + 20 &&
         mouseY > by5 - 800 &&
         mouseY < by5 + 800 && mouseIsPressed
 
@@ -744,6 +764,161 @@ push();
     rect(-10, 0, -bruit_size, 3);
     rect(165, 0, bruit_size, 3);
     text("SEYED M. TABATABAEI", 0, -17.5 + spaze);
+    pop();
+
+
+
+}
+
+
+function rodrigo() {
+
+    push();
+
+/*
+    var bruitx1 = -0.000002;
+    var bx1 = noise(millis() * bruitx1) * 500;
+*/
+    var bruity8 = 0.00009;
+    var by8 = 300 + noise(millis() * bruity8) * 200;
+
+    var bruit = 0.0001;
+    var bruit_size = 1600 + noise(millis() * bruit) * 800;
+
+    fill(255);
+    noStroke();
+
+    if (
+
+        mouseX > bx8 - 30 &&
+        mouseX < bx8 + 30 &&
+        mouseY > by8 - 800 &&
+        mouseY < by8 + 800
+
+    ) {
+
+        overBox = true;
+        noStroke();
+        fill('#FFC145');
+    } else {
+        overBox = false;
+    }
+
+    if (
+
+        mouseX > bx8 - 30 &&
+        mouseX < bx8 + 30 &&
+        mouseY > by8 - 800 &&
+        mouseY < by8 + 800 && mouseIsPressed
+
+    ) {
+
+        overBox = true;
+        window.open("PooyanAlizadeh", "_self");
+    } else {
+        overBox = false;
+    }
+
+
+    //rectMode(CENTER);
+    
+    translate(bx8, by8);
+    
+
+   angleMode(DEGREES); // Change the mode to DEGREES
+  let a = 280;
+
+            rotate(a);
+
+
+
+    //fill('#5B5F97');
+    // fill(0, 0);
+    // strokeWeight(2);
+    // stroke(255);
+
+    
+    
+    rect(-25, 0, -bruit_size, 3);
+    rect(150, 0, bruit_size, 3);
+    text("RODRIGO VELASCO", 0, -17.5 + spaze);
+    pop();
+
+}
+
+
+function waylon() {
+
+push();
+/*
+    var bruitx2 = 0.00001;
+    var bx2 = noise(millis() * bruitx2) * 200;
+*/
+    var bruity9 = 0.000018;
+    var by9 = noise(millis() * bruity9) * 200;
+
+    var bruit = 0.0001;
+    var bruit_size = 1600 + noise(millis() * bruit) * 800;
+    var bruitcursor = 0.000021;
+    var bruit_cursor = noise(millis() * bruitcursor) * -6;
+
+    fill(255);
+    noStroke();
+
+    if (
+
+        mouseX > bx9 - 30 &&
+        mouseX < bx9 + 30 &&
+        mouseY > by9 - 800 &&
+        mouseY < by9 + 800
+
+    ) {
+
+        overBox = true;
+        noStroke();
+        fill('#FFC145');
+    } else {
+        overBox = false;
+    }
+
+    if (
+
+        mouseX > bx9 - 30 &&
+        mouseX < bx9 + 30 &&
+        mouseY > by9 - 800 &&
+        mouseY < by9 + 800 && mouseIsPressed
+
+    ) {
+
+        overBox = true;
+        window.open("BiaWolanski", "_self");
+    } else {
+        overBox = false;
+    }
+
+
+    //rectMode(CENTER);
+    
+    translate(bx9, by9);
+    
+
+    //rotate(bruit_cursor);
+    angleMode(DEGREES); // Change the mode to DEGREES
+  let a = 80;
+
+            rotate(a);
+
+
+    //fill('#5B5F97');
+    // fill(0, 0);
+    // strokeWeight(2);
+    // stroke(255);
+
+    
+    
+    rect(-10, 0, -bruit_size, 3);
+    rect(165, 0, bruit_size, 3);
+    text("WAYLON WILSON", 0, -17.5 + spaze);
     pop();
 
 
