@@ -48,7 +48,7 @@ function setup() {
 
 function draw() {
 
-    textFont('Space Mono');
+    textFont('FoundersGrotesk-Light');
     textSize(16);
 
 
@@ -82,7 +82,7 @@ function pooyan() {
 
 
     var bruit = 0.0001;
-    var bruit_size = noise(millis() * bruit) * 200;
+    var bruit_size = noise(millis() * bruit) * 600;
     var bruitcursor = 0.00001;
     var bruit_cursor = noise(millis() * bruitcursor) * 10;
 
@@ -125,7 +125,7 @@ function pooyan() {
     translate(bx, by);
     rotate(bruit_cursor);
     rect(0, 0, bruit_size, 2);
-    text("Pooyan Alizadeh", 0, 0 + spaze);
+    text("POOYAN ALIZADEH", 0, 0 + spaze);
     pop();
 
 }
@@ -136,7 +136,7 @@ function firdous() {
 
 
     var bruit = 0.0001;
-    var bruit_size = noise(millis() * bruit) * 200;
+    var bruit_size = noise(millis() * bruit) * 500;
     var bruitcursor = 0.000021;
     var bruit_cursor = noise(millis() * bruitcursor) * -6;
 
@@ -178,7 +178,7 @@ function firdous() {
     translate(bx1, by1);
     rotate(bruit_cursor);
     rect(0, 0, bruit_size, 2);
-    text("Firdous Nizar", 0, 0 + spaze);
+    text("FIRDOUS NIZAR", 0, 0 + spaze);
     pop();
 
 }
@@ -189,7 +189,7 @@ function bia() {
 
 
     var bruit = 0.0001;
-    var bruit_size = noise(millis() * bruit) * 200;
+    var bruit_size = noise(millis() * bruit) * 700;
     var bruitcursor = 0.000051;
     var bruit_cursor = noise(millis() * bruitcursor) * 12;
 
@@ -231,7 +231,7 @@ function bia() {
     translate(bx2, by2);
     rotate(bruit_cursor);
     rect(0, 0, bruit_size, 2);
-    text("Bia Wolanski", 0, 0 + spaze);
+    text("BIA WOLANSKI", 0, 0 + spaze);
     pop();
 
 }

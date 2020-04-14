@@ -1,5 +1,14 @@
-@import url(
+
+
+/*@import url(
 https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300);@charset "UTF-8";
+*/
+
+@font-face {
+	font-family: "FoundersGrotesk-Light";
+	src: url("../FoundersGrotesk-Light.otf");
+}
+
 
 /*
 canvas {
@@ -27,12 +36,11 @@ left: 16px;
 cursor: pointer; }
 .comp-form #top-nav {
 position: relative;
-font-family: "Roboto";
-font-weight: bold;
+font-family: 'Red Hat Text', sans-serif;
+letter-spacing: 0.5px; 
 font-size: 12px;
 background-color: #000;
 color: #F4F3F1;
-letter-spacing: 0.23px;
 padding-top: 20px; }
 .comp-form #top-nav::before {
 position: absolute;
@@ -81,46 +89,41 @@ right: -30px; } }
 .comp-form #hero::before {
 border-top: none; }
 .comp-form #hero h1 {
-font-family: 'Miriam Libre';
+font-family: FoundersGrotesk-Light;
 font-weight: bold;
-font-size: 36px;
+font-size: 40px;
 color: #F4F3F1;
-letter-spacing: 0.56px;
+	letter-spacing: 1px; 
 text-transform: uppercase;
 margin-top: 155px; }
 @media (max-width: 575px) {
 .comp-form #hero h1 {
 margin-top: 90px; } }
 .comp-form #hero h6 {
-font-family: "Miriam Libre";
-font-weight: bold;
-font-size: 10px;
+font-family: 'Red Hat Text', sans-serif;
+letter-spacing: 0.5px; 
+font-size: 12px;
 color: #F4F3F1;
-letter-spacing: 0.04px;
-margin-top: 50px;
+margin-top: 60px;
 padding-bottom: 3px;
-border-bottom: 1px solid #F4F3F1;
+border-bottom: 0.5px solid #F4F3F1;
 }
 .comp-form #hero h7 {
-font-family: "Miriam Libre";
-font-weight: bold;
-font-size: 18px;
+font-family: 'Red Hat Text', sans-serif;
+font-size: 20px;
 color: #F4F3F1;
 letter-spacing: 0.04px;
 margin-top: 50px;
-padding-bottom: 3px;
+padding-bottom: 0.5px;
 }
 .comp-form #hero .description {
-font-family: "Miriam Libre";
-font-weight: bold;
+font-family: 'Red Hat Text', sans-serif;
 font-size: 30px;
 color: #F4F3F1;
-letter-spacing: 0.31px;
-line-height: 54px;
-margin-top: 50px;
+margin-top: 66px;
 margin-bottom: 50px; }
 .comp-form #hero .software {
-font-family: 'Miriam Libre';
+font-family: 'FoundersGrotesk-Light';
 font-weight: light;
 font-size: 24px;
 color: #F4F3F1;
@@ -163,7 +166,7 @@ background: rgba(0, 170, 255, 0.1); }
 background-color: #000;
 }
 .comp-form-toc h1 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: bold;
 font-size: 25px;
 line-height: 1.5;
@@ -175,7 +178,7 @@ text-transform: uppercase;
 margin-left: 18px;
 }
 .comp-form-toc h2 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: bold;
 font-size: 10px;
 letter-spacing: 0.04px;
@@ -185,7 +188,7 @@ margin-top: 65px;
 margin-bottom: 8px;
 border-bottom: 0.5px solid #CCC; }
 .comp-form-toc h3 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: 700;
 font-size: 20px;
 line-height: 1.2;
@@ -260,7 +263,7 @@ counter-reset: h2s;
 /* tables */
 /* images */ }
 .comp-form-copy > h1 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: bold;
 font-size: 25px;
 line-height: 1.5;
@@ -269,14 +272,13 @@ letter-spacing: 0.31px;
 margin-top: 120px;
 margin-bottom: 24px; }
 .comp-form-copy > h2 {
-font-family: "Miriam Libre";
-font-weight: bold;
-font-size: 25px;
+font-family: 'Red Hat Text', sans-serif;
+font-size: 28px;
 line-height: 1.5;
 color: #000;
-letter-spacing: 0.31px;
-margin-top: 100px;
-margin-bottom: 24px;
+letter-spacing: 0px;
+margin-top: 120px;
+margin-bottom: 54px;
 padding-left: 0em; }
 
 /*
@@ -292,7 +294,7 @@ padding-left: 0; }
 .comp-form-copy > h2.plain::before {
 content: none; }
 .comp-form-copy h3 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-size: 24px;
 color: #000;
 letter-spacing: 0.31px;
@@ -312,11 +314,11 @@ line-height: 25px;
 color: #000; }
 .comp-form-copy p {
 margin-bottom: 10px;
-font-family: "Roboto";
+	font-family: 'Red Hat Text', sans-serif;
 font-weight: 300;
 text-align: justify;
-font-size: 20px;
-letter-spacing: 0.31px;
+font-size: 18px;
+letter-spacing: 0.25px;
 line-height: calc(25 / 16); }
 .comp-form-copy blockquote {
 margin-bottom: 10px;
@@ -500,10 +502,10 @@ margin-right: calc( (100% + 15px * 2) / -8 * 2 - 15px); } }
 .comp-form-copy .underline {
 border-bottom: 1px solid #CCC; }
 .comp-form-copy .bigger {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-size: 1.2em; }
 .comp-form-copy .biggest {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-size: 1.5em; }
 .comp-form-copy .caption {
 font-size: .8em;
@@ -627,7 +629,7 @@ clear: both; }
 margin-top: 0;
 text-align: center;
 color: #F4F3F1;
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: bold;
 font-size: 26px;
 letter-spacing: 0.37px;
@@ -649,7 +651,7 @@ font-size: 14px;
 letter-spacing: 0.31px;
 line-height: 20px; }
 .comp-form-copy .activity > h3, .comp-form-copy .assignment > h3, .comp-form-copy .discussion > h3 {
-font-family: "Miriam Libre";
+font-family: "FoundersGrotesk-Light";
 font-weight: bold;
 font-size: 10px;
 letter-spacing: 0.04px;
@@ -734,12 +736,13 @@ padding-top: 10px; }
 margin-top: 40px;
 margin-bottom: 80px; }
 .comp-form-copy .slide-info .artist {
+	font-family: 'Red Hat Text', sans-serif;
 font-size: 1em;
 font-weight: 400;
 margin-bottom: 1em; }
 .comp-form-copy .slide-info .title {
-font-family: 'Miriam Libre';
-font-size: 20px;
+font-family: 'Red Hat Text', sans-serif;
+font-size: 16px;
 letter-spacing: 0.31px;
 line-height: 25px;
 font-weight: 200;
