@@ -39,6 +39,8 @@ var by8;
 var bx9;
 var by9;
 
+var chido = 300;
+
 /*
 function preload() {
   futura = loadFont('fonts/futura.otf');
@@ -93,7 +95,7 @@ function draw() {
 
 
     clear();
-
+/*
     push();
     cruz();
     pop();
@@ -101,7 +103,7 @@ function draw() {
     push();
     cruz2();
     pop();
-
+*/
     push();
     pooyan();
     pop();
@@ -168,14 +170,14 @@ push();
 
         mouseX > bx - 30 &&
         mouseX < bx + 30 &&
-        mouseY > by - 800 &&
-        mouseY < by + 800
+        mouseY > by - chido &&
+        mouseY < by + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -184,8 +186,8 @@ push();
 
         mouseX > bx - 30 &&
         mouseX < bx + 30 &&
-        mouseY > by - 800 &&
-        mouseY < by + 800 && mouseIsPressed
+        mouseY > by - chido &&
+        mouseY < by + chido && mouseIsPressed
 
     ) {
 
@@ -245,14 +247,14 @@ function katrina() {
 
         mouseX > bx1 - 30 &&
         mouseX < bx1 + 30 &&
-        mouseY > by1 - 800 &&
+        mouseY > by1 - chido &&
         mouseY < by1 + 800
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -261,8 +263,8 @@ function katrina() {
 
         mouseX > bx1 - 30 &&
         mouseX < bx1 + 30 &&
-        mouseY > by1 - 800 &&
-        mouseY < by1 + 800 && mouseIsPressed
+        mouseY > by1 - chido &&
+        mouseY < by1 + chido && mouseIsPressed
 
     ) {
 
@@ -290,11 +292,9 @@ function katrina() {
     // strokeWeight(2);
     // stroke(255);
 
-    
-    
-    rect(-25, 0, -bruit_size, 3);
-    rect(150, 0, bruit_size, 3);
-    text("KATRINA JURJANS", 0, -17.5 + spaze);
+    rect(-63, 0, -bruit_size, 3);
+    rect(115, 0, bruit_size, 3);
+    text("KATRINA JURJANS", -48, -17.5 + spaze);
     pop();
 
 }
@@ -321,14 +321,14 @@ push();
 
         mouseX > bx2 - 30 &&
         mouseX < bx2 + 30 &&
-        mouseY > by2 - 800 &&
+        mouseY > by2 - chido &&
         mouseY < by2 + 800
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -337,8 +337,8 @@ push();
 
         mouseX > bx2 - 30 &&
         mouseX < bx2 + 30 &&
-        mouseY > by2 - 800 &&
-        mouseY < by2 + 800 && mouseIsPressed
+        mouseY > by2 - chido &&
+        mouseY < by2 + chido && mouseIsPressed
 
     ) {
 
@@ -369,7 +369,7 @@ push();
     
     
     rect(-10, 0, -bruit_size, 3);
-    rect(165, 0, bruit_size, 3);
+    rect(130, 0, bruit_size, 3);
     text("BIA WOLANSKI", 0, -17.5 + spaze);
     pop();
 
@@ -400,14 +400,14 @@ push();
 
         mouseX > bx3 - 30 &&
         mouseX < bx3 + 30 &&
-        mouseY > by3 - 800 &&
-        mouseY < by3 + 800
+        mouseY > by3 - chido &&
+        mouseY < by3 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -416,13 +416,13 @@ push();
 
         mouseX > bx3 - 30 &&
         mouseX < bx3 + 30 &&
-        mouseY > by3 - 800 &&
-        mouseY < by3 + 800 && mouseIsPressed
+        mouseY > by3 - chido &&
+        mouseY < by3 + chido && mouseIsPressed
 
     ) {
 
         overBox = true;
-        window.open("BiaWolanski", "_self");
+        window.open("PooyanAlizadeh", "_self");
     } else {
         overBox = false;
     }
@@ -448,7 +448,7 @@ push();
     
     
     rect(-10, 0, -bruit_size, 3);
-    rect(165, 0, bruit_size, 3);
+    rect(151, 0, bruit_size, 3);
     text("SEBASTIEN AUBIN", 0, -17.5 + spaze);
     pop();
 
@@ -466,7 +466,7 @@ function aboozar() {
     var bx1 = noise(millis() * bruitx1) * 500;
 */
     var bruity4 = 0.00009;
-    var by4 = 500 + noise(millis() * bruity4) * 300;
+    var by4 = 250 + noise(millis() * bruity4) * 300;
 
     var bruit = 0.0001;
     var bruit_size = 1600 + noise(millis() * bruit) * 800;
@@ -478,14 +478,14 @@ function aboozar() {
 
         mouseX > bx4 - 20 &&
         mouseX < bx4 + 20 &&
-        mouseY > by4 - 800 &&
-        mouseY < by4 + 800
+        mouseY > by4 - chido &&
+        mouseY < by4 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -494,8 +494,8 @@ function aboozar() {
 
         mouseX > bx4 - 15 &&
         mouseX < bx4 + 15 &&
-        mouseY > by4 - 800 &&
-        mouseY < by4 + 800 && mouseIsPressed
+        mouseY > by4 - chido &&
+        mouseY < by4 + chido && mouseIsPressed
 
     ) {
 
@@ -525,8 +525,8 @@ function aboozar() {
 
     
     
-    rect(-25, 0, -bruit_size, 3);
-    rect(150, 0, bruit_size, 3);
+    rect(-12, 0, -bruit_size, 3);
+    rect(177, 0, bruit_size, 3);
     text("ABOOZAR BEHESHTI", 0, -17.5 + spaze);
     pop();
 
@@ -543,8 +543,8 @@ function anna() {
     var bruitx1 = -0.000002;
     var bx1 = noise(millis() * bruitx1) * 500;
 */
-    var bruity5 = 0.00008;
-    var by5 = 30 + noise(millis() * bruity5) * 200;
+    var bruity5 = 0.00009;
+    var by5 = 350 + noise(millis() * bruity5) * 200;
 
     var bruit = 0.0001;
     var bruit_size = 1600 + noise(millis() * bruit) * 800;
@@ -556,14 +556,14 @@ function anna() {
 
         mouseX > bx5 - 20 &&
         mouseX < bx5 + 20 &&
-        mouseY > by5 - 800 &&
-        mouseY < by5 + 800
+        mouseY > by5 - chido &&
+        mouseY < by5 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -572,8 +572,8 @@ function anna() {
 
         mouseX > bx5 - 20 &&
         mouseX < bx5 + 20 &&
-        mouseY > by5 - 800 &&
-        mouseY < by5 + 800 && mouseIsPressed
+        mouseY > by5 - chido &&
+        mouseY < by5 + chido && mouseIsPressed
 
     ) {
 
@@ -603,8 +603,8 @@ function anna() {
 
     
     
-    rect(-25, 0, -bruit_size, 3);
-    rect(150, 0, bruit_size, 3);
+    rect(-10, 0, -bruit_size, 3);
+    rect(160, 0, bruit_size, 3);
     text("ANNA MINZHULINA", 0, -17.5 + spaze);
     pop();
 
@@ -634,14 +634,14 @@ push();
 
         mouseX > bx6 - 30 &&
         mouseX < bx6 + 30 &&
-        mouseY > by6 - 800 &&
-        mouseY < by6 + 800
+        mouseY > by6 - chido &&
+        mouseY < by6 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -650,8 +650,8 @@ push();
 
         mouseX > bx6 - 30 &&
         mouseX < bx6 + 30 &&
-        mouseY > by6 - 800 &&
-        mouseY < by6 + 800 && mouseIsPressed
+        mouseY > by6 - chido &&
+        mouseY < by6 + chido && mouseIsPressed
 
     ) {
 
@@ -681,8 +681,8 @@ push();
 
     
     
-    rect(-10, 0, -bruit_size, 3);
-    rect(165, 0, bruit_size, 3);
+    rect(-12, 0, -bruit_size, 3);
+    rect(138, 0, bruit_size, 3);
     text("FIRDOUS NIZAR", 0, -17.5 + spaze);
     pop();
 
@@ -714,14 +714,14 @@ push();
 
         mouseX > bx7 - 30 &&
         mouseX < bx7 + 30 &&
-        mouseY > by7 - 800 &&
-        mouseY < by7 + 800
+        mouseY > by7 - chido &&
+        mouseY < by7 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -730,8 +730,8 @@ push();
 
         mouseX > bx7 - 30 &&
         mouseX < bx7 + 30 &&
-        mouseY > by7 - 800 &&
-        mouseY < by7 + 800 && mouseIsPressed
+        mouseY > by7 - chido &&
+        mouseY < by7 + chido && mouseIsPressed
 
     ) {
 
@@ -761,8 +761,8 @@ push();
 
     
     
-    rect(-10, 0, -bruit_size, 3);
-    rect(165, 0, bruit_size, 3);
+    rect(-12, 0, -bruit_size, 3);
+    rect(190, 0, bruit_size, 3);
     text("SEYED M. TABATABAEI", 0, -17.5 + spaze);
     pop();
 
@@ -792,14 +792,14 @@ function rodrigo() {
 
         mouseX > bx8 - 30 &&
         mouseX < bx8 + 30 &&
-        mouseY > by8 - 800 &&
-        mouseY < by8 + 800
+        mouseY > by8 - chido &&
+        mouseY < by8 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -808,8 +808,8 @@ function rodrigo() {
 
         mouseX > bx8 - 30 &&
         mouseX < bx8 + 30 &&
-        mouseY > by8 - 800 &&
-        mouseY < by8 + 800 && mouseIsPressed
+        mouseY > by8 - chido &&
+        mouseY < by8 + chido && mouseIsPressed
 
     ) {
 
@@ -839,8 +839,8 @@ function rodrigo() {
 
     
     
-    rect(-25, 0, -bruit_size, 3);
-    rect(150, 0, bruit_size, 3);
+    rect(-12, 0, -bruit_size, 3);
+    rect(170, 0, bruit_size, 3);
     text("RODRIGO VELASCO", 0, -17.5 + spaze);
     pop();
 
@@ -869,14 +869,14 @@ push();
 
         mouseX > bx9 - 30 &&
         mouseX < bx9 + 30 &&
-        mouseY > by9 - 800 &&
-        mouseY < by9 + 800
+        mouseY > by9 - chido &&
+        mouseY < by9 + chido
 
     ) {
 
         overBox = true;
         noStroke();
-        fill('#FFC145');
+        fill('#A7F1FF');
     } else {
         overBox = false;
     }
@@ -885,13 +885,13 @@ push();
 
         mouseX > bx9 - 30 &&
         mouseX < bx9 + 30 &&
-        mouseY > by9 - 800 &&
-        mouseY < by9 + 800 && mouseIsPressed
+        mouseY > by9 - chido &&
+        mouseY < by9 + chido && mouseIsPressed
 
     ) {
 
         overBox = true;
-        window.open("BiaWolanski", "_self");
+        window.open("PooyanAlizadeh", "_self");
     } else {
         overBox = false;
     }
@@ -916,8 +916,8 @@ push();
 
     
     
-    rect(-10, 0, -bruit_size, 3);
-    rect(165, 0, bruit_size, 3);
+    rect(-12, 0, -bruit_size, 3);
+    rect(153, 0, bruit_size, 3);
     text("WAYLON WILSON", 0, -17.5 + spaze);
     pop();
 
